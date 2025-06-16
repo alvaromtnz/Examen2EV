@@ -36,6 +36,12 @@ OUTPUT:
 #    el valor empieza en 5 y va reduciendo
 numero = 5
 
+while numero:
+    numero = numero -1
+    print (f"{numero}")
+
+print(numero)
+
 '''
 OUTPUT:
 El número ahora es 5
@@ -51,7 +57,15 @@ El número ahora es 1
 #    y una vez indicados se llama a la función pasando los números que el usuario ha escrito.
 #    La función sumará los números y devolverá el resultado
 
-# print(f"SUMA: {sumar(numero1, numero2)}")
+def sumar(numero1,numero2):
+    resultado = numero1 + numero2
+    return resultado
+
+numero1 = int(input("Escriba 1 numero: "))
+numero2 = int(input("Escriba otro numero: "))
+resultado = sumar(numero1, numero2)
+print (f"La suma del los numeros {numero1} y {numero2} es de {resultado}")
+
 
 
 
@@ -96,6 +110,7 @@ print(buscarPalabra(lista_palabras)) # OUTPUT: True
 #    lo mismo con el primer y segundo apellido, quedando un diccionario de tamaño 3. Luego, utiliza un bucle
 #    para imprimir el contenido
 
+nombre = {"Alvaro"}
 
 
 '''
